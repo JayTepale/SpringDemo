@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springframework.org/schema/context"
+    xmlns:aop="http://www.springframework.org/schema/aop"
+    xsi:schemaLocation="http://www.springframework.org/schema/beans
+    http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+    http://www.springframework.org/schema/context
+    http://www.springframework.org/schema/context/spring-context-3.0.xsd
+    http://www.springframework.org/schema/aop 
+    http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+    
+    <bean name="emp" class="com.springcored.collection.Emp">
+     <property name="empName" value ="Radhe"/>
+          <property name="empPhones">
+          <list>
+          <value>7642856858</value>
+          <value>7562856858</value>
+          <value>8642856858</value>
+          <null/>
+           </list>
+  
+  
+     </property>
+     
+      <property name="empAddress">
+          <set>
+          <value>"PUNE"</value>
+          <value>"Banglore"</value>
+          <value>"Mumbai"</value>
+           </set>
+  
+  
+     </property>
+     
+      <property name="courses">
+          <map>
+          <entry key="Java" value="3Months"/>
+         <entry key="Python" value="1Months"/>
+            <entry key="C++" value="1.5Months"/>
+           </map>
+  
+  
+     </property>
+     
+    </bean>
+    
+    
+    
+    <bean class="com.springcored.Student" id="student2">
+   
+    </bean>
+    
+ </beans>
+ 
+ 

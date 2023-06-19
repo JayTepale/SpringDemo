@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+     xmlns:context="http://www.springframework.org/schema/context"
+     xmlns:aop="http://www.springframework.org/schema/aop"
+     xmlns:p="http://www.springframework.org/schema/p"
+     xmlns:c="http://www.springframework.org/schema/c"
+     xsi:schemaLocation="http://www.springframework.org/schema/beans
+     http://www.springframework.org/schema/beans/spring-beans-3.0.xsd
+     http://www.springframework.org/schema/context
+     http://www.springframework.org/schema/context/spring-context-3.0.xsd
+     http://www.springframework.org/schema/aop 
+     http://www.springframework.org/schema/aop/spring-aop-3.0.xsd ">
+    
+    <bean name="course" class="com.springcore.ci.Course">
+       <constructor-arg value="JAVA COURSE COMPLETED"/>
+       </bean>
+    
+    
+ <bean name="person" class="com.springcore.ci.Person">
+   <constructor-arg value="Jay"/>
+    <constructor-arg value="10" />
+    <constructor-arg ref="course" />
+    
+    </bean>
+  <bean name="add" class="com.springcore.ci.Addition">
+    <constructor-arg value="13" type="int" index="1"/>
+    <constructor-arg value="36" type="int" index="0"/>
+  
+  </bean>
+ </beans>
+ 
+ 
